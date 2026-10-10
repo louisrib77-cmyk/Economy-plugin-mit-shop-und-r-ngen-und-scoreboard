@@ -1,0 +1,50 @@
+# /shop - alle Survival-Items und -Blöcke kaufen (bezahlt mit dem Geld aus dem JobsPlugin).
+# Nach Änderungen: /eco reload
+#
+# So wird der Preis pro Stück bestimmt (in dieser Reihenfolge):
+#   1. Eintrag unter "prices" unten
+#   2. Verkaufspreis aus prices.yml x buy-multiplier
+#   3. aus dem Crafting-Rezept berechnet (Zutaten-Preise + craft-markup)
+#   4. default-price
+# Kaufen ist nie billiger als Verkaufen, damit man kein Geld "drucken" kann.
+
+buy-multiplier: 4.0   # Kaufpreis = Verkaufspreis x diesen Wert
+craft-markup: 0.10    # 0.10 = 10 % Aufschlag auf berechnete Preise
+default-price: 50.0   # wenn nichts anderes zutrifft
+
+# Zusätzlich gesperrte Items (End-Items, Elytra, Spawn-Eier usw. sind schon fest gesperrt)
+blocked: []
+#  - NETHER_STAR
+
+# Eigene Preise pro Stück (überschreiben alles andere)
+prices:
+  NETHER_STAR: 5000
+  TOTEM_OF_UNDYING: 2500
+  ENCHANTED_GOLDEN_APPLE: 4000
+  TRIDENT: 3000
+  HEART_OF_THE_SEA: 2000
+  NAUTILUS_SHELL: 150
+  WITHER_SKELETON_SKULL: 1500
+  ECHO_SHARD: 300
+  SPONGE: 100
+  SADDLE: 200
+  NAME_TAG: 100
+
+messages:
+  shop-title: "<dark_gray>Shop"
+  button-prev: "<yellow>← Zurück"
+  button-next: "<yellow>Weiter →"
+  info-name: "<gold><bold>Shop <gray>(Seite <page>/<pages>)"
+  info-lore:
+    - "<gray>Dein Kontostand: <gold><money>"
+  item-lore:
+    - "<gray>Preis: <gold><price><gray> pro Stück"
+    - ""
+    - "<yellow>Linksklick<gray>: 1 kaufen"
+    - "<yellow>Rechtsklick<gray>: 16 kaufen"
+    - "<yellow>Shift + Klick<gray>: 64 kaufen"
+  bought: "<gray>Du hast <white><count>x <item><gray> für <gold><money><gray> gekauft."
+  not-enough: "<red>Du hast nicht genug Geld. Preis: <white><price><red>, dein Kontostand: <white><money>"
+  inventory-full: "<red>Dein Inventar ist voll. Nicht erhaltene Items wurden nicht berechnet."
+  search-empty: "<red>Nichts gefunden für <white><query><red>."
+  error: "<red>Beim Kaufen ist ein Fehler passiert. Es wurde nichts abgebucht."

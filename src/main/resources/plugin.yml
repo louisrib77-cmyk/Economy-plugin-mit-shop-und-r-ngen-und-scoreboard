@@ -1,0 +1,56 @@
+name: LouisEconomy
+version: '1.2.0'
+main: de.louis.economy.LouisEconomy
+api-version: '26.2'
+depend: [JobsPlugin]
+commands:
+  pay:
+    description: Geld an einen Spieler senden
+    usage: /pay <Spieler> <Betrag>
+    permission: louiseconomy.pay
+  balance:
+    description: Kontostand anzeigen
+    usage: /balance [Spieler]
+    aliases: [bal, money, geld]
+    permission: louiseconomy.balance
+  baltop:
+    description: Die reichsten Spieler
+    usage: /baltop [Seite]
+    aliases: [top, reichste]
+    permission: louiseconomy.baltop
+  eco:
+    description: Geld verwalten (Admin)
+    usage: /eco <give|take|set> <Spieler> <Betrag>
+    permission: louiseconomy.admin
+  sell:
+    description: Items verkaufen
+    usage: /sell
+    aliases: [verkaufen]
+    permission: louiseconomy.sell
+  shop:
+    description: Items und Blöcke kaufen
+    usage: /shop [Suchbegriff]
+    aliases: [kaufen, buy]
+    permission: louiseconomy.shop
+  worth:
+    description: Zeigt den Verkaufswert des Items in deiner Hand
+    usage: /worth
+    aliases: [wert]
+    permission: louiseconomy.worth
+permissions:
+  louiseconomy.sell:
+    default: true
+  louiseconomy.worth:
+    default: true
+  louiseconomy.shop:
+    default: true
+  louiseconomy.pay:
+    default: true
+  louiseconomy.balance:
+    default: true
+  louiseconomy.balance.others:
+    default: true
+  louiseconomy.baltop:
+    default: true
+  louiseconomy.admin:
+    default: op

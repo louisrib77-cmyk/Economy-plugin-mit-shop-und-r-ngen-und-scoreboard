@@ -1,0 +1,88 @@
+# Verkaufspreise pro Stück (für /sell). Material-Namen groß geschrieben.
+# Items, die hier nicht stehen, kann man nicht verkaufen (sie kommen zurück).
+# Preis 0 oder Zeile löschen = nicht verkäuflich. Nach Änderungen: /eco reload
+prices:
+  # Erze und Mineralien
+  COAL: 1.5
+  RAW_COPPER: 1.0
+  COPPER_INGOT: 1.5
+  RAW_IRON: 2.0
+  IRON_INGOT: 2.5
+  RAW_GOLD: 3.0
+  GOLD_INGOT: 3.5
+  REDSTONE: 0.5
+  LAPIS_LAZULI: 0.75
+  QUARTZ: 1.0
+  AMETHYST_SHARD: 1.0
+  DIAMOND: 12.0
+  EMERALD: 10.0
+  NETHERITE_SCRAP: 25.0
+  NETHERITE_INGOT: 120.0
+
+  # Blöcke
+  COBBLESTONE: 0.1
+  STONE: 0.2
+  DEEPSLATE: 0.2
+  COBBLED_DEEPSLATE: 0.1
+  DIRT: 0.05
+  SAND: 0.1
+  GRAVEL: 0.1
+  NETHERRACK: 0.05
+  OBSIDIAN: 4.0
+
+  # Holz
+  OAK_LOG: 1.0
+  SPRUCE_LOG: 1.0
+  BIRCH_LOG: 1.0
+  JUNGLE_LOG: 1.2
+  ACACIA_LOG: 1.2
+  DARK_OAK_LOG: 1.5
+  MANGROVE_LOG: 1.5
+  CHERRY_LOG: 1.8
+  PALE_OAK_LOG: 2.0
+
+  # Farmen
+  WHEAT: 1.0
+  CARROT: 0.75
+  POTATO: 0.75
+  BEETROOT: 0.75
+  NETHER_WART: 1.0
+  MELON_SLICE: 0.25
+  PUMPKIN: 1.0
+  SUGAR_CANE: 0.5
+  CACTUS: 0.5
+  BAMBOO: 0.2
+  SWEET_BERRIES: 0.5
+  COCOA_BEANS: 0.7
+  APPLE: 1.0
+
+  # Mob-Drops
+  ROTTEN_FLESH: 0.3
+  BONE: 0.5
+  STRING: 0.5
+  SPIDER_EYE: 0.5
+  GUNPOWDER: 1.0
+  ENDER_PEARL: 4.0
+  BLAZE_ROD: 4.0
+  SLIME_BALL: 2.0
+  GHAST_TEAR: 8.0
+  PHANTOM_MEMBRANE: 3.0
+  LEATHER: 1.0
+  FEATHER: 0.3
+  INK_SAC: 0.5
+  EGG: 0.2
+
+  # Essen
+  BEEF: 0.5
+  COOKED_BEEF: 1.5
+  PORKCHOP: 0.5
+  COOKED_PORKCHOP: 1.5
+  CHICKEN: 0.4
+  COOKED_CHICKEN: 1.2
+  MUTTON: 0.5
+  COOKED_MUTTON: 1.5
+  COD: 0.4
+  COOKED_COD: 1.0
+  SALMON: 0.5
+  COOKED_SALMON: 1.2
+  BREAD: 1.5

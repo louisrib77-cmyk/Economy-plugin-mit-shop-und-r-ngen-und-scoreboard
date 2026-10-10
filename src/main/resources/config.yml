@@ -1,0 +1,41 @@
+# Das Geld liegt im JobsPlugin - /pay, /balance, /sell usw. arbeiten mit demselben Geld.
+currency-symbol: "$"
+min-pay: 0.01          # kleinster Betrag bei /pay
+baltop-page-size: 10
+sell-multiplier: 1.0   # z. B. 2.0 = alles bringt doppelt so viel (Preise stehen in prices.yml)
+
+# MiniMessage-Format. Platzhalter stehen in spitzen Klammern.
+messages:
+  prefix: "<gray>[<gold>Wirtschaft<gray>] "
+  no-permission: "<red>Dafür hast du keine Rechte."
+  only-players: "<red>Das geht nur als Spieler."
+  jobs-missing: "<red>Das JobsPlugin ist nicht verfügbar."
+  no-player: "<red>Spieler <white><player><red> wurde nicht gefunden."
+  invalid-amount: "<red>Ungültiger Betrag. Beispiel: <white>/pay Name 100"
+  min-amount: "<red>Der Mindestbetrag ist <white><min><red>."
+  self-pay: "<red>Du kannst dir nicht selbst Geld senden."
+  not-enough: "<red>Du hast nicht genug Geld. Dein Kontostand: <white><money>"
+  pay-usage: "<red>Benutzung: <white>/pay <Spieler> <Betrag>"
+  pay-sent: "<gray>Du hast <gold><money><gray> an <white><player><gray> gesendet."
+  pay-received: "<gray>Du hast <gold><money><gray> von <white><player><gray> erhalten."
+  balance-self: "<gray>Dein Kontostand: <gold><money>"
+  balance-other: "<gray>Kontostand von <white><player><gray>: <gold><money>"
+  baltop-header: "<gold><bold>Reichste Spieler <gray>(Seite <page>/<pages>)"
+  baltop-line: "<yellow><rank>. <white><player><gray> - <gold><money>"
+  baltop-empty: "<gray>Es gibt noch keine Einträge."
+  eco-usage: "<red>Benutzung: <white>/eco <give|take|set> <Spieler> <Betrag> <red>oder <white>/eco reload"
+  eco-done: "<gray>Neuer Kontostand von <white><player><gray>: <gold><money>"
+  reloaded: "<gray>Konfiguration und Preise neu geladen."
+  # --- /sell ---
+  sell-title: "<dark_gray>Verkaufen"
+  sell-button-name: "<green><bold>Verkaufen"
+  sell-button-lore:
+    - "<gray>Gesamtwert: <gold><money>"
+    - ""
+    - "<yellow>Klicke hier oder schließe das Menü,"
+    - "<yellow>um die Items zu verkaufen."
+  sell-sold: "<gray>Du hast <white><count><gray> Items für <gold><money><gray> verkauft."
+  sell-returned: "<gray>Nicht verkäufliche Items (<white><count><gray>) hast du zurückbekommen."
+  sell-error: "<red>Beim Verkaufen ist ein Fehler passiert. Du hast deine Items zurückbekommen."
+  worth-line: "<white><item><gray>: <gold><money><gray> pro Stück (Stack: <gold><stack><gray>)"
+  worth-none: "<red>Dieses Item kann man nicht verkaufen."
